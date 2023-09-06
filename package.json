@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://abbassarwar.github.io/react-portfolio/",
+  "homepage": "https://AbbasSarwar.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
