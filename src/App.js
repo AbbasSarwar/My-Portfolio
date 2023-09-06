@@ -5,7 +5,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Services from './components/Services'
+import Stacks from './components/Stacks'
 import { useState } from 'react';
 function App() {
   const [sidebar, setSidebar] = useState(false)
@@ -24,7 +24,7 @@ function App() {
       <Route path='/Contact' element={<Contact />} />
       <Route path='/Portfolio' element={<Portfolio />} />
       <Route path='/Resume' element={<Resume />} />
-      <Route path='/Services' element={<Services />} />
+      <Route path='/Stacks' element={<Stacks />} />
     </Routes>
     </div>
     </div>

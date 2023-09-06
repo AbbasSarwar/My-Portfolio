@@ -15,9 +15,10 @@
     },
     "info": {
         "name": "Abbas Sarwar",
-        "picture": "../assets/man.jpg",
+        "picture": "https://raw.githubusercontent.com/AbbasSarwar/Assets/main/portfolio.jpg",
         "bio": "<span>Full-<span className='end'>stack</span> Developer</span>",
-        "description": "I'm passionated Full-stack developer"
+        "description": "I'm passionated Full-stack developer",
+        "main_social": "https://www.linkedin.com/in/abbassarwar/"
     },
     "resume": {
         "Experience": "3y",
@@ -25,5 +26,75 @@
         "Age": 19,
         "Available": "Yes",
         "email": "abbassarwargd@gmail.com"
+    },
+    "resume_summary": {
+        "Communication": {
+            "Progress": "2023",
+            "icon": "fa-solid fa-comments",
+            "description": "I possess exceptional communication skills, recognizing that effective communication is pivotal for successfully managing projects with diverse peers from around the world. I honed these skills within the Microverse Community, where, over the course of 7 months, I had the opportunity to collaborate with individuals from various corners of the globe."
+        },
+        "Full-stack Development": {
+            "Progress": "2023 Ongoing",
+            "icon": "fa-solid fa-laptop-code",
+            "description": "I embarked on my Full-stack journey in February 2023 with Microverse, and it has been a life-changing experience. Throughout this journey, we've collaboratively developed impressive applications while fostering strong relationships and effective communication among our peers, creating a truly interactive learning environment."
+        },
+        "Education": {
+            "Progress": "Completed in 2022",
+            "icon": "fa-solid fa-book-open",
+            "description": "I completed my 12th grade, but my deep-seated passion for programming and the ever-growing interest in the field led me to make a career switch. I have chosen web development as my path, opting for self-employment to pursue my passion and build a fulfilling career."
+        }
+    },
+    "portfolio": {
+        "Resort app": {
+            "stack": ["Full-stack Dev", "2023"],
+            "description": "A booking app that enables you to add, delete, and reserve resorts with full authentication for login/sign-up. It was completed through teamwork and communication.",
+            "stacks": ["HTML5", "CSS3", "Reactjs", "Ruby on rails", "PostgreSQL", "Git"],
+            "source_link": "https://github.com/AbbasSarwar/resort-booking-frontend-app",
+            "Live": "https://resort-app-frontend.onrender.com/",
+            "Picture": "https://raw.githubusercontent.com/AbbasSarwar/Assets/main/resort.PNG"
+        },
+        "Recipe app": {
+            "stack": ["Full-stack Dev", "2023"],
+            "description": "The Recipe app is a helpful tool for creating recipes, managing ingredients, and tracking cooking time. It was completed through teamwork and collaboration.",
+            "stacks": ["Ruby on rails", "Bootstrap", "PostgreSQL", "Git"],
+            "source_link": "https://github.com/AbbasSarwar/Recipe-app",
+            "Live": "",
+            "Picture": "https://raw.githubusercontent.com/AbbasSarwar/Assets/main/recipe.PNG"
+        },
+        "Currency exchange app": {
+            "stack": ["Front-end Dev", "2023"],
+            "description": "Currency Exchange is a web app that enables currency conversion between different countries, offering a user-friendly interface to select and convert currencies. It also provides information on currency codes and associated country names.",
+            "stacks": ["HTML5", "CSS3", "Reactjs", "Git"],
+            "source_link": "https://github.com/AbbasSarwar/CurrencyExchange",
+            "Live": "https://currencyexchange-sgx0.onrender.com/",
+            "Picture": "https://raw.githubusercontent.com/AbbasSarwar/Assets/main/Currency.PNG"
+        },
+        "Movies app": {
+            "stack": ["Front-end Dev", "2023"],
+            "description": "This is a movie and TV show listing project that retrieves all data from an API, and allows you to like and comment on them.",
+            "stacks": ["HTML5", "CSS3", "JavaScript", "webpack", "FetchAPI", "Git"],
+            "source_link": "https://github.com/AbbasSarwar/Shows",
+            "Live":"https://abbassarwar.github.io/Shows/dist/",
+            "Picture": "https://raw.githubusercontent.com/AbbasSarwar/Assets/main/movies.PNG"
+        }
+    },
+    "Stacks": {
+        "Front-end development": {
+            "list": ["HTML5", "CSS3", "JavaScript", "React & Redux"],
+            "color":"purple"      },
+        "Framework & Libraries": {
+            "list": ["Bootstrap", "Ruby on rails"],
+            "color":"purple"
+        },
+        "Back-end Development": {
+            "list": ["Ruby", "SQL"],
+            "color":"purple"
+        },
+        "Tools & Methods": {
+            "list": ["VsCode", "Git", "PostgreSQL", "Chrome Dev tools"],
+            "color":"purple"       },
+        "Professional": {
+            "list": ["Remote Pair-Programming", "Teamwork", "Mentoring", "Code Reviewer"],
+            "color":"purple"        }
     }
 }

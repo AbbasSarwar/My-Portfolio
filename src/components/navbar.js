@@ -3,17 +3,17 @@ import image from '../assets/man.jpg';
 import styles from '../style.module.css';
 import data from './data.json';
 const Navbar = ({sidebar, setSidebar}) => {
-    const {socials} = data;
+    const {socials, info} = data;
     const social = Object.keys(socials);
     const reset = () =>{
         setSidebar(!sidebar)
     }
     return (
         <>
-        <header className={`${sidebar? 'open': ''}`}>
+        <header className={`${sidebar? 'open': ''} col-6 col-md-3`}>
             <p className="pcross text-light"><i className="fa-solid fa-xmark d-inline-block fs-3 p-3" onClick={reset}></i></p>
             <div className="top-menu">
-                <div className="img"><img src={image} alt="profile" /></div>
+                <div className="img"><img src={info.picture} alt="profile" /></div>
                 <h2>Abbas Sarwar</h2>
                 <ul className="top-social-menu">
                     {
@@ -29,7 +29,7 @@ const Navbar = ({sidebar, setSidebar}) => {
                     <li><NavLink onClick={reset} to="/About"><i className="fa-solid fa-user icon" /> <span className={styles.textsize}>About</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/Resume"><i className="fa-solid fa-file icon" /> <span className={styles.textsize}>Resume</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/Portfolio"><i className="fa-solid fa-layer-group icon" /> <span className={styles.textsize}>Portfolio</span></NavLink></li>
-                    <li><NavLink onClick={reset} to="/Services"><i className="fa-solid fa-server icon" /> <span className={styles.textsize}>Services</span></NavLink></li>
+                    <li><NavLink onClick={reset} to="/Stacks"><i className="fa-solid fa-server icon" /> <span className={styles.textsize}>Stacks</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/Contact"><i className="fa-solid fa-envelope icon" /> <span className={styles.textsize}>Contact</span></NavLink></li>
                 </ul>
             </nav>

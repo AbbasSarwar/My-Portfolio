@@ -4,9 +4,23 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
 
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background-color: #eae6e6;
+} 
+
+body p {
+  font-family: 'Roboto', sans-serif !important;
+  text-align: justify;
 }
 
 .containers {
@@ -24,7 +38,6 @@ body {
   margin-left: 25%;
 }
 header {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -152,8 +165,8 @@ header {
 }
 
 .about-img img {
-  width: 600px;
-  height: 250px;
+  width: 700px;
+  height: 280px;
 }
 
 .top-menu-icon {
@@ -169,6 +182,96 @@ header {
   padding: 3px 0;
 }
 
+.about-p {
+  text-align: justify;
+}
+
+.flex-card {
+  background-color: #fdfdfd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border: 1px solid rgb(232, 230, 226);
+  border-radius: 5px;
+  transition: 350ms;
+}
+.flex-card:hover {
+  transform: scale(1.01);
+  background-color: #dfe3f0;
+}
+
+.connect {
+  text-decoration: none;
+  transition: 350ms;
+}
+
+.connect:hover {
+  color: #cdd1d5;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2340e0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+  transition: 350ms;
+  border: 0;
+}
+
+.button:hover {
+  background-color: #a2adf8;
+}
+
+.flex-cards {
+  background-color: #fdfdfd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border: 1px solid rgb(232, 230, 226);
+  border-radius: 5px;
+  transition: 350ms;
+}
+
+.flex-cards img {
+  width: 100%;
+  height: 250px;
+}
+
+.flex-cards:hover {
+  transform: scale(1.01);
+  background-color: #dfe3f0;
+}
+
+.flex-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  transition: 0.5;
+}
+
+.flex-modal p {
+  color: #ffffff;
+  width: 50%;
+}
+
+.flex-modal img {
+  width: 300px;
+  height: 300px;
+}
+
+.fsize {
+  font-size: 20px;
+}
+
+
 @media only screen and (max-width: 900px) {
 
   #root {
@@ -183,9 +286,9 @@ header {
   header {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     left: -100%;
-    z-index: 1;
+    z-index: 999;
     width: 35%;
     transition: 850ms;
 
@@ -199,10 +302,6 @@ header {
   header h2 {
     font-size: 14px;
     font-weight: 600;
-  }
-
-  .top-social-menu {
-    display: none;
   }
 
   nav {
@@ -225,9 +324,7 @@ header {
     color: #fff;
 
   }
-  header .fa-solid {
-    display: none;
-  }
+
   .footer {
     display: none;
   }
@@ -250,4 +347,20 @@ header {
   .pcross {
     display: inline-block;
   }
+  .flex-card:hover {
+    transform: none;
+  }
+  .flex-cards:hover {
+    transform: none;
+  }
+
+  .flex-modal img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex-modal p {
+    width: 100%;
+  }
+
 }
