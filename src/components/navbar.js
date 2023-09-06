@@ -1,21 +1,26 @@
 import { NavLink } from "react-router-dom";
-import image from '../assets/man.jpg'
+import image from '../assets/man.jpg';
 import styles from '../style.module.css';
+import data from './data.json';
 const Navbar = ({sidebar, setSidebar}) => {
+    const {socials} = data;
+    const social = Object.keys(socials);
     const reset = () =>{
         setSidebar(!sidebar)
     }
     return (
         <>
         <header className={`${sidebar? 'open': ''}`}>
-            <p className="pcross text-light"><i class="fa-solid fa-xmark d-inline-block fs-3 p-3" onClick={reset}></i></p>
+            <p className="pcross text-light"><i className="fa-solid fa-xmark d-inline-block fs-3 p-3" onClick={reset}></i></p>
             <div className="top-menu">
                 <div className="img"><img src={image} alt="profile" /></div>
                 <h2>Abbas Sarwar</h2>
                 <ul className="top-social-menu">
-                    <li><a href="https://www.linkedin.com/in/abbassarwar/"><i className="fa-brands fa-linkedin-in" /></a></li>
-                    <li><a href="https://github.com/AbbasSarwar?"><i className="fa-brands fa-github" /></a></li>
-                    <li><a href="https://twitter.com/Abbas_sDev"><i className="fa-brands fa-xing" /></a></li>
+                    {
+                        social.map((item) => {
+                            return (<li key={item}><a href={socials[item].link}><i className={socials[item].class}></i></a></li>)
+                        })
+                    }
                 </ul>
             </div>
             <nav>

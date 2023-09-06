@@ -1,0 +1,29 @@
+{
+    "socials" : {
+        "linkedIn": {
+            "link": "https://www.linkedin.com/in/abbassarwar/",
+            "class": "fa-brands fa-linkedin-in"
+        },
+        "github":{
+            "link": "https://github.com/AbbasSarwar?",
+            "class": "fa-brands fa-github"
+        },
+        "twitter": {
+            "link": "https://twitter.com/Abbas_sDev",
+            "class": "fa-brands fa-xing"
+        }
+    },
+    "info": {
+        "name": "Abbas Sarwar",
+        "picture": "../assets/man.jpg",
+        "bio": "<span>Full-<span className='end'>stack</span> Developer</span>",
+        "description": "I'm passionated Full-stack developer"
+    },
+    "resume": {
+        "Experience": "3y",
+        "Country": "Pakistan",
+        "Age": 19,
+        "Available": "Yes",
+        "email": "abbassarwargd@gmail.com"
+    }
+}

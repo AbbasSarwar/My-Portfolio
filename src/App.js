@@ -14,7 +14,7 @@ function App() {
   }
   return (
     <>
-    <p className="top-menu-icon"><i class="fa-solid fa-bars p-2 d-inline" onClick={sidebarMenu} /></p>
+    <p className="top-menu-icon"><i className="fa-solid fa-bars p-2 d-inline" onClick={sidebarMenu} /></p>
     <div className='containers'>
     <Navbar sidebar={sidebar} setSidebar={setSidebar} />
     <div className='main'>
