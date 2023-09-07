@@ -24,7 +24,7 @@ const Navbar = ({sidebar, setSidebar}) => {
             </div>
             <nav>
                 <ul className="menu">
-                    <li><NavLink onClick={reset} to="/"><i className="fa-solid fa-house icon" /> <span className={styles.textsize}>Home</span></NavLink></li>
+                    <li><NavLink onClick={reset} to="/react-portfolio"><i className="fa-solid fa-house icon" /> <span className={styles.textsize}>Home</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/About"><i className="fa-solid fa-user icon" /> <span className={styles.textsize}>About</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/Resume"><i className="fa-solid fa-file icon" /> <span className={styles.textsize}>Resume</span></NavLink></li>
                     <li><NavLink onClick={reset} to="/Portfolio"><i className="fa-solid fa-layer-group icon" /> <span className={styles.textsize}>Portfolio</span></NavLink></li>
