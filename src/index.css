@@ -104,7 +104,7 @@ header {
 }
 
 .menu li {
-  padding: 8px 0;
+  padding: 8px 0px;
 }
 
 .menu li a{
@@ -112,6 +112,7 @@ header {
   font-size: 18px;
   color: #868282;
   transition: .5s;
+  text-align: end;
 }
 
 .active {
@@ -120,7 +121,7 @@ header {
 .icon {
   color: rgb(173, 198, 245);
   font-size: 18px;
-  padding: 0 10px;
+  text-align: center;
 }
 
 .active .icon {

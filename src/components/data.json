@@ -11,6 +11,10 @@
         "twitter": {
             "link": "https://twitter.com/Abbas_sDev",
             "class": "fa-brands fa-xing"
+        },
+        "Resume": {
+            "link": "https://docs.google.com/document/d/1NScUTzuSnfG3vSjTIvwNeKMp1ZSu47VXmKNxVlz010I/edit?usp=sharing",
+            "class": "fa-solid fa-file"
         }
     },
     "info": {
