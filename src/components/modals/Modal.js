@@ -34,9 +34,11 @@ const Modal = ({ closeModal, infodata }) => {
           ))}
         </ul>
         <div className="d-flex justify-content-md-end justify-content-center align-items-end gap-2">
-          <a href={portfolio[infodata].Live} className="btn btn-primary">
+          {portfolio[infodata].Live? (<a href={portfolio[infodata].Live} className="btn btn-primary">
             See Live
-          </a>
+          </a>) : (<a href={portfolio[infodata].Live} className="btn btn-primary">
+            No Live
+          </a>)}
           <a href={portfolio[infodata].source_link} className="btn btn-primary">
             See Source
           </a>
