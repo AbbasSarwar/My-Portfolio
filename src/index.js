@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter basename='/react-portfolio'>
+    <BrowserRouter basename='/my-portfolio'>
     <App />
     </BrowserRouter>
 );

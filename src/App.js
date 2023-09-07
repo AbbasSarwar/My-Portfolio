@@ -19,7 +19,7 @@ function App() {
     <Navbar sidebar={sidebar} setSidebar={setSidebar} />
     <div className='main'>
     <Routes>
-      <Route path='/react-portfolio' element={<Home />} />
+      <Route path='/my-portfolio' element={<Home />} />
       <Route path='/About' element={<About />} />
       <Route path='/Contact' element={<Contact />} />
       <Route path='/Portfolio' element={<Portfolio />} />
