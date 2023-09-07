@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import image from '../assets/man.jpg';
 import styles from '../style.module.css';
 import data from './data.json';
 const Navbar = ({sidebar, setSidebar}) => {
